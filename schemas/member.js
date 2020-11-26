@@ -15,9 +15,9 @@ export default {
 		},
 		{
 			name: "committee",
-			title: "Committee (excomm or steering)",
+			title: "Committee ('excomm' or 'officer' or 'class')",
 			type: "string",
-			validation: Rule => Rule.regex(/^(excomm|steering)$/)
+			validation: Rule => Rule.regex(/^(excomm|officer|class)$/)
 		},
 		{
 			name: "role",

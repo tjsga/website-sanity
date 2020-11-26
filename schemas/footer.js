@@ -14,15 +14,10 @@ export default {
 				type: "document",
 				fields: [
 					{
-						name: "title",
-						title: "Title",
-						type: "string"
-					},
-					{
-						name: "links",
-						title: "Links",
+						name: "content",
+						title: "Content",
 						type: "array",
-						of: [{type: "string"}]
+						of: [{type: "block"}]
 					}
 				]
 			}]

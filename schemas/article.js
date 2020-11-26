@@ -19,10 +19,20 @@ export default {
 			type: "date"
 		},
 		{
+			name: "author",
+			title: "Author",
+			type: "string"
+		},
+		{
 			name: "content",
 			title: "Content",
 			type: "array",
 			of: [{type: "block"}]
+		},
+		{
+			name: "summary",
+			title: "Short summary",
+			type: "text"
 		}
 	]
 };
