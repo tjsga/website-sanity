@@ -2,7 +2,8 @@ import S from '@sanity/desk-tool/structure-builder';
 
 const notSingletonPage = listItem => ![
 	"mission",
-	"footer"
+	"footer",
+	"get_involved",
 ].includes(listItem.getId())
 
 export default () =>
@@ -17,13 +18,21 @@ export default () =>
 						.schemaType("mission")
 						.documentId("mission")
 				),
-				S.listItem()
+			S.listItem()
 				.title("Footer")
 				.child(
 					S.editor()
 						.id("footer")
 						.schemaType("footer")
 						.documentId("footer")
+				),
+			S.listItem()
+				.title("Get Involved")
+				.child(
+					S.editor()
+						.id("get_involved")
+						.schemaType("get_involved")
+						.documentId("get_involved")
 				),
 			...S.documentTypeListItems().filter(notSingletonPage)
 		]);

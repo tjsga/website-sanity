@@ -1,22 +1,36 @@
 export default {
 	name: "get_involved",
-	title: "Way to get involved",
+	title: "Get involved",
 	type: "document",
+	__experimental_actions: [ 'update', 'publish', 'create' ], // removing 'delete'
 	fields: [
 		{
-			name: "title",
-			title: "Title",
-			type: "string"
-		},
-		{
-			name: "text",
-			title: "Text",
-			type: "text"
-		},
-		{
-			name: "priority",
-			title: "Priority",
-			type: "number"
+			name: "ways",
+			title: "Ways To Get Involved",
+			type: "array",
+			of: [{
+				name: "way",
+				title: "Way To Get Involved",
+				type: "document",
+				fields: [
+					{
+						name: "title",
+						title: "Title",
+						type: "string"
+					},
+					{
+						name: "text",
+						title: "Text",
+						type: "text"
+					},
+					{
+						name: "priority",
+						title: "Priority",
+						type: "number"
+					}
+				]
+			}]
 		}
+		
 	]
 }
