@@ -22,11 +22,6 @@ export default {
 						name: "text",
 						title: "Text",
 						type: "text"
-					},
-					{
-						name: "priority",
-						title: "Priority",
-						type: "number"
 					}
 				]
 			}]
