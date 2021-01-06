@@ -15,6 +15,11 @@ export default {
 			type: "text"
 		},
 		{
+			name: "inspiration",
+			title: "Inspiration",
+			type: "text"
+		},
+		{
 			name: "quote_text",
 			title: "Quote text",
 			type: "string"
